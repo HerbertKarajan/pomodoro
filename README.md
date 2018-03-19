@@ -17,7 +17,7 @@ see open [issues](https://github.com/christian-fei/pomodoro.cc/issues)
 
 View the readme of the service you would like to contribute to :)
 
-Also check out [CONTRIBUTING.md](https://github.com/HerbertKarajan/pomodoro/CONTRIBUTING.md)
+Also check out [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Getting started
 
