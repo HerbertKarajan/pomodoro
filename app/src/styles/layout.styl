@@ -1,0 +1,31 @@
+@import 'vars'
+
+body
+  position relative
+  margin 0
+  padding 0
+
+.container
+  max-width container_width
+  margin-right auto
+  margin-left @margin-right
+
+.main-content
+  padding 3rem .5rem
+
+.content
+  @extend .container
+
+
+.tac
+  text-align center
+
+.ovs
+  @media all and (max-width container_width)
+    overflow-x scroll
+
+.ovs-extended
+    overflow-x scroll
+
+.no-mt
+  margin-top 0

@@ -1,0 +1,43 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "auth for pomodoro.cc",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose",
+    "start": "node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "deploy": "npm run deploy:development; npm run deploy:production",
+    "deploy:development": "up deploy development -v",
+    "deploy:production": "up deploy production -v",
+    "stack:apply": "up stack plan -v && up stack apply -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mongo": "^0.1.0",
+    "monk": "^6.0.5",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-twitter": "^1.0.4",
+    "r2": "git+https://github.com/mikeal/r2.git"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  }
+}
